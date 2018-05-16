@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/place_order_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.h2oaqua.h2oaqua.PlaceOrderActivity"
+    tools:showIn="@layout/app_bar_place_order">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/place_order"
+            android:textColor="#ffffff"
+            android:textSize="32sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/isi_packaged_drinking_water_20_liters_bottle"
+                android:textColor="@color/colorPrimary"
+                android:textSize="26sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/quantity_of_water_cans"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/minusWaterCans"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corner_black_bg"
+                    android:text="@string/minus_sign"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"/>
+
+                <EditText
+                    android:id="@+id/waterCansText"
+                    android:layout_width="48dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/rounded_corner"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"/>
+
+                <Button
+                    android:id="@+id/plusWaterCans"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corner_black_bg"
+                    android:text="@string/plus_sign"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:background="#808080"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_empty_water_cans"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/minusEmptyWaterCans"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corner_black_bg"
+                    android:text="@string/minus_sign"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"/>
+
+                <EditText
+                    android:id="@+id/emptyWaterCansText"
+                    android:layout_width="48dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/rounded_corner"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"/>
+
+                <Button
+                    android:id="@+id/plusEmptyWaterCans"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corner_black_bg"
+                    android:text="@string/plus_sign"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/collapseRateCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:onClick="showRateCard"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/view_rate_card"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp"/>
+
+                <ImageView
+                    android:id="@+id/rcShowButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_expand_more_black_48dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/expandedRateCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="hideRateCard">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/view_rate_card"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp"/>
+
+                    <ImageView
+                        android:id="@+id/rcHideButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_expand_less_black_48dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/_01_water_can_30"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/_02_or_more_water_cans_25_per_can"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/_100_per_can_to_be_paid_if_the_customer_does_nt_have_an_empty_can"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/placeOrderNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounded_corner_black_bg"
+            android:text="@string/next"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.h2oaqua.h2oaqua.phoneNumberActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-16dp"
+        android:padding="16dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/phone_number"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9378ab"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/enter_your_phone_number_below"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/phoneNumbereEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:background="@drawable/rounded_corner_white_bg"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/phone_number"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:maxLength="10"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/submitPhoneNumberButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corner_black_bg"
+            android:text="@string/next"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

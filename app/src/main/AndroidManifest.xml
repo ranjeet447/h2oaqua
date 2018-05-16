@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="in.h2oaqua.h2oaqua">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAeeNrGJKvzqJ8TAuO69kZe1-jp4H2WXTs"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signInActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".PlaceOrderActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".contactUsActivity"
+            android:label=""
+            android:parentActivityName=".PlaceOrderActivity">
+        </activity>
+        <activity
+            android:name=".confirmationActivity"
+            android:label=""
+            android:parentActivityName=".PlaceOrderActivity">
+        </activity>
+        <activity
+            android:name=".userProfileActivity"
+            android:label=""
+            android:parentActivityName=".PlaceOrderActivity">
+        </activity>
+        <activity
+            android:name=".orderHistoryActivity"
+            android:label=""
+            android:parentActivityName=".PlaceOrderActivity">
+        </activity>
+        <activity
+            android:name=".addressActivity"
+            android:label=""
+            android:parentActivityName=".MapsActivity">
+        </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label=""
+            android:parentActivityName=".confirmationActivity">
+        </activity>
+        <activity android:name=".phoneNumberActivity"
+                  android:label=""
+                  android:parentActivityName=".phoneNumberActivity">
+        </activity>
+        <activity android:name=".otpActivity"
+                  android:label=""
+                  android:parentActivityName=".phoneNumberActivity">
+        </activity>
+    </application>
+
+</manifest>

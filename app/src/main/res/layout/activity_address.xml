@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.h2oaqua.h2oaqua.addressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="16dp"
+            android:text="@string/address"
+            android:textColor="@color/white"
+            android:textSize="40sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/floor_no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/floor_no_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/floor_no"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/house_no_flat_no"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/red_asterik"
+                    android:textColor="#d50000"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Flat_no_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/house_no_flat_no"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/street"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/red_asterik"
+                    android:textColor="#d50000"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/street_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/street"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/landmark"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/landmark_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/optional"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locality"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/red_asterik"
+                    android:textColor="#d50000"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/locality_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/locality"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/red_asterik"
+                    android:textColor="#d50000"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/city_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/city"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pincode"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="@string/red_asterik"
+                    android:textColor="#d50000"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pincode_EditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_bg"
+                android:hint="@string/pincode"
+                android:inputType="number"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/save_address_Button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounded_corner_black_bg"
+            android:text="@string/save_address"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

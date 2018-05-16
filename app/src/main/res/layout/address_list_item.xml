@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/addressImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_circle_green"
+        android:src="@drawable/ic_place_white_48dp"/>
+
+    <TextView
+        android:id="@+id/addressString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="8dp"
+        android:text="@string/address1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+</LinearLayout>
